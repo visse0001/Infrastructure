@@ -103,7 +103,7 @@ tool:
           installers:
           - sonarRunnerInstaller:
               id: "5.0.1.3006"
-    terraform:
+  terraform:
     installations:
     - name: "Terraform"
       properties:
