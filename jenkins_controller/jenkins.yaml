@@ -16,7 +16,6 @@ jenkins:
           ssh:
             credentialsId: "jenkins_agent"
             host: "192.168.44.44"
-#            host: "127.0.0.1"
             port: 2222
             sshHostKeyVerificationStrategy: "nonVerifyingKeyVerificationStrategy"
         name: "agent"
@@ -73,13 +72,13 @@ jobs:
 
 unclassified:
   location:
-    url: "http://localhost:8880/"
+    url: "http://192.168.44.44:8880/"
 
   sonarGlobalConfiguration:
     buildWrapperEnabled: false
     installations:
     - name: "SonarQube"
-      serverUrl: "http://localhost:9000"
+      serverUrl: "http://192.168.44.44:9000"
       triggers:
         skipScmCause: false
         skipUpstreamCause: false
